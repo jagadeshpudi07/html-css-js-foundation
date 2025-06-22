@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage - HTML, CSS & JavaScript</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to My First Webpage!</h1>
+            <p class="intro">Learning HTML, CSS, and JavaScript fundamentals through hands-on practice</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Learn HTML</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="about">
+                <h2>About This Project</h2>
+                <p>This webpage demonstrates the three fundamental technologies of web development:</p>
+                <ul style="margin: 15px 0; padding-left: 30px;">
+                    <li><strong>HTML</strong> - Provides the structure and content</li>
+                    <li><strong>CSS</strong> - Handles the styling and visual presentation</li>
+                    <li><strong>JavaScript</strong> - Adds interactivity and dynamic behavior</li>
+                </ul>
+                <p>By combining these technologies, we can create engaging and functional web experiences.</p>
+            </section>
+
+            <section>
+                <h2>Visual Elements</h2>
+                <div class="image-container">
+                    <img src="https://w3-lab.com/wp-content/uploads/2019/12/Get-the-Most-Fancied-Web-Development-Services-min-scaled.jpg" alt="Web development illustration showing HTML, CSS, and JavaScript concepts">
+                    <p style="margin-top: 10px; font-style: italic; color: #666;">
+                        An illustration representing the core web technologies
+                    </p>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>What You'll Learn</h2>
+                
+                <h3>HTML Fundamentals</h3>
+                <p>HTML (HyperText Markup Language) is the backbone of web pages. It provides structure using elements like headings, paragraphs, images, and links. Every webpage starts with HTML to define its content and organization.</p>
+
+                <h3>CSS Styling</h3>
+                <p>CSS (Cascading Style Sheets) transforms plain HTML into visually appealing designs. It controls colors, fonts, spacing, layouts, and animations. CSS makes websites beautiful and user-friendly.</p>
+
+                <h3>JavaScript Interactivity</h3>
+                <p>JavaScript brings websites to life by adding interactive features. It can respond to user actions, manipulate content dynamically, and create engaging user experiences.</p>
+            </section>
+
+            <section id="projects" class="interactive-section">
+                <h2>Interactive Demo</h2>
+                <p>Click the buttons below to see JavaScript in action!</p>
+                
+                <button onclick="showWelcomeAlert()">Welcome Message</button>
+                <button onclick="changeBackgroundColor()">Change Colors</button>
+                <button onclick="showCurrentTime()">Show Current Time</button>
+                <button onclick="askUserName()">Personalized Greeting</button>
+                
+                <div id="output" style="margin-top: 20px; padding: 15px; background: white; border-radius: 5px; min-height: 50px;">
+                    <p><em>Click a button above to see the result here!</em></p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Useful Resources</h2>
+                <p>Here are some helpful links to continue your web development journey:</p>
+                <ul style="margin: 15px 0; padding-left: 30px;">
+                    <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML Tutorial</a></li>
+                    <li><a href="https://www.w3schools.com/css/" target="_blank">W3Schools CSS Tutorial</a></li>
+                    <li><a href="https://www.w3schools.com/js/" target="_blank">W3Schools JavaScript Tutorial</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer id="contact">
+            <p>&copy; 2024 My First Webpage Project | Built with HTML, CSS & JavaScript</p>
+            <p>Keep learning and building amazing things! 🚀</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
